@@ -24,6 +24,7 @@ This project focuses on the implementation and design of network protocols. It p
 ```bash
 git clone https://github.com/Dulith-Kavinda/network_Protocol_design.git
 cd network_Protocol_design
+cd ASOPF
 ```
 
 2. Install any required dependencies (if applicable):
@@ -33,36 +34,31 @@ pip install -r requirements.txt
 
 ## Usage
 
-To use the network protocol implementations in this project:
-
-```python
-# Example usage
-import protocol
-
-# Your code here
-```
 
 ## Project Structure
 
 ```
 network_Protocol_design/
+└── requirements.txt (if needed)
+ASOPF/
 ├── README.md
-├── requirements.txt (if needed)
-└── src/
-    └── # Protocol implementations
+├──topology files
+├──main.py
+└──protocol_sim
+
+ASOPF_comparison_with_isis_ospf_BGP_RIP/
+├── README.md
+├──topology files
+├──main.py
+└──protocol_sim
 ```
 
 ## Contributing
-
-Contributions are welcome! Please feel free to submit a pull request or open an issue for bugs and feature requests.
+Contributed by team synex - me and Achintha, Ravindu, Thejake.
 
 ## License
 
 This project is currently unlicensed. Please see the LICENSE file for more information.
-
-## Author
-
-**Dulith-Kavinda** - [GitHub Profile](https://github.com/Dulith-Kavinda)
 
 ## Contact
 
