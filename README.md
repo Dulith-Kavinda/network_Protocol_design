@@ -1,86 +1,195 @@
 # Network Protocol Design
 
-A Python-based project for designing, implementing and analyzing network protocols.
+[![Python 3.x](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-Unlicensed-red.svg)](#license)
 
-## Overview
+A comprehensive Python-based project for designing, implementing, and analyzing network routing protocols. This project provides educational implementations and comparative analysis of modern routing protocols including OSPF, BGP, RIP, IS-IS, and an experimental AOSPF protocol.
 
-This project focuses on the implementation and design of network protocols. It provides tools and utilities for understanding how network communication works at various layers of the OSI model.
+## 📋 Table of Contents
 
-## Features
+- [Overview](#overview)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [Protocols Implemented](#protocols-implemented)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-- Protocol implementation examples
-- Network communication utilities
-- Protocol analysis and testing tools
-- Educational resources for network design
+## 🎯 Overview
 
-## Prerequisites
+This project focuses on the implementation and comparative analysis of network routing protocols across various layers of the OSI model. It provides practical implementations, simulation tools, and analysis utilities for understanding how modern network communication protocols operate.
 
-- Python 3.x
-- Standard Python libraries
-- networkx
+## ✨ Features
 
-## Installation
+- **Multiple Protocol Implementations**
+  - OSPF (Open Shortest Path First)
+  - BGP (Border Gateway Protocol)
+  - RIP (Routing Information Protocol)
+  - IS-IS (Intermediate System to Intermediate System)
+  - AOSPF (Experimental Protocol)
 
-1. Clone the repository:
+- **Comparative Analysis Tools**
+  - Protocol performance comparison
+  - Topology-based simulation
+  - Network communication utilities
+
+- **Protocol Analysis and Testing**
+  - Detailed protocol simulations
+  - Performance metrics
+  - Educational resources
+
+- **Extensible Architecture**
+  - Modular protocol implementations
+  - Easy to extend with new protocols
+  - Reusable utility functions
+
+## 📦 Prerequisites
+
+- **Python:** 3.x or higher
+- **Dependencies:**
+  - `networkx` - For network graph operations
+  - Standard Python libraries (sys, os, etc.)
+
+## 🚀 Installation
+
+### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/Dulith-Kavinda/network_Protocol_design.git
 cd network_Protocol_design
 ```
-To run Comparison with ospf
+
+### 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Or manually install required packages:
+
+```bash
+pip install networkx
+```
+
+## 📁 Project Structure
+
+```
+network_Protocol_design/
+│
+├── README.md
+├── requirements.txt
+│
+├── ASOPF/
+│   ├── README.md
+│   ├── main.py
+│   ├── topology/
+│   │   └── [topology files]
+│   └── protocol_sim/
+│       └── [protocol simulation files]
+│
+├── ASOPF_comparison_with_isis_ospf_BGP_RIP/
+│   ├── README.md
+│   ├── main.py
+│   ├── topology/
+│   │   └── [topology files]
+│   └── protocol_sim/
+│       └── [protocol simulation files]
+│
+└── protocols/
+    ├── ospf.py
+    ├── rip.py
+    ├── bgp.py
+    ├── isis.py
+    └── aospf.py
+```
+
+### Directory Descriptions
+
+| Directory | Description |
+|-----------|-------------|
+| `ASOPF/` | Standalone AOSPF protocol implementation with simulation tools |
+| `ASOPF_comparison_with_isis_ospf_BGP_RIP/` | Comparative analysis module for multiple routing protocols |
+| `protocols/` | Core protocol implementations used across the project |
+
+## 💻 Usage
+
+### Running AOSPF Comparison
+
+To run the AOSPF protocol simulation:
+
 ```bash
 cd ASOPF
 python main.py
 ```
-To run Comparison with all protocols
+
+### Running All Protocols Comparison
+
+To run comparative analysis with all implemented protocols (AOSPF, OSPF, IS-IS, BGP, RIP):
+
 ```bash
 cd ASOPF_comparison_with_isis_ospf_BGP_RIP
 python main.py
 ```
 
-2. Install any required dependencies (if applicable):
-```bash
-pip install -r requirements.txt
-```
+## 🌐 Protocols Implemented
 
-## Usage
+### OSPF (Open Shortest Path First)
+- Link-state routing protocol
+- Suitable for medium to large networks
+- Located in: `protocols/ospf.py`
 
+### RIP (Routing Information Protocol)
+- Distance-vector routing protocol
+- Simpler but less efficient than OSPF
+- Located in: `protocols/rip.py`
 
-## Project Structure
+### BGP (Border Gateway Protocol)
+- Path-vector routing protocol
+- Used for inter-domain routing
+- Located in: `protocols/bgp.py`
 
-```
-network_Protocol_design/
-└── requirements.txt (if needed)
-ASOPF/
-├── README.md
-├──topology files
-├──main.py
-└──protocol_sim
+### IS-IS (Intermediate System to Intermediate System)
+- Link-state routing protocol
+- Similar to OSPF but different protocol design
+- Located in: `protocols/isis.py`
 
-ASOPF_comparison_with_isis_ospf_BGP_RIP/
-├── README.md
-├──topology files
-├──main.py
-└──protocol_sim
+### AOSPF (Experimental Protocol)
+- Custom routing protocol implementation
+- Located in: `protocols/aospf.py`
 
-protocols/
-├──ospf.py
-├──RIP.py
-├──BGP.py
-├──AOSPF.py
-└──isis.py
-```
+## 🤝 Contributing
 
-## Contributing
-Contributed by team synex - me and Achintha, Ravindu, Thejake.
+This project was developed by **Team Synex** with contributions from:
 
-## License
+- **Dulith Kavinda** (Repository Owner)
+- **Achintha**
+- **Ravindu**
+- **Thejake**
 
-This project is currently unlicensed. Please see the LICENSE file for more information.
+### How to Contribute
 
-## Contact
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -m 'Add YourFeature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a Pull Request
 
-For questions or inquiries, please open an issue in this repository.
+## 📜 License
+
+This project is currently **unlicensed**. Please see the [LICENSE](LICENSE) file for more information.
+
+## 📧 Contact
+
+For questions, suggestions, or issues, please:
+
+- Open an [issue](https://github.com/Dulith-Kavinda/network_Protocol_design/issues) in this repository
+- Contact the development team through GitHub
 
 ---
 
-**Last Updated:** May 16, 2026
+**Last Updated:** May 17, 2026  
+**Language:** Python 3.x  
+**Repository:** [Dulith-Kavinda/network_Protocol_design](https://github.com/Dulith-Kavinda/network_Protocol_design)
