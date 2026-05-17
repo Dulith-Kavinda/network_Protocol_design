@@ -1,6 +1,6 @@
 # Network Protocol Design
 
-A Python-based project for designing, implementing, and analyzing network protocols.
+A Python-based project for designing, implementing and analyzing network protocols.
 
 ## Overview
 
@@ -17,6 +17,7 @@ This project focuses on the implementation and design of network protocols. It p
 
 - Python 3.x
 - Standard Python libraries
+- networkx
 
 ## Installation
 
@@ -24,7 +25,16 @@ This project focuses on the implementation and design of network protocols. It p
 ```bash
 git clone https://github.com/Dulith-Kavinda/network_Protocol_design.git
 cd network_Protocol_design
+```
+To run Comparison with ospf
+```bash
 cd ASOPF
+python main.py
+```
+To run Comparison with all protocols
+```bash
+cd ASOPF_comparison_with_isis_ospf_BGP_RIP
+python main.py
 ```
 
 2. Install any required dependencies (if applicable):
@@ -51,6 +61,13 @@ ASOPF_comparison_with_isis_ospf_BGP_RIP/
 ├──topology files
 ├──main.py
 └──protocol_sim
+
+protocols/
+├──ospf.py
+├──RIP.py
+├──BGP.py
+├──AOSPF.py
+└──isis.py
 ```
 
 ## Contributing
