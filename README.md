@@ -1,8 +1,5 @@
 # Network Protocol Design
 
-[![Python 3.x](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-Unlicensed-red.svg)](#license)
-
 A comprehensive Python-based project for designing, implementing, and analyzing network routing protocols. This project provides educational implementations and comparative analysis of modern routing protocols including OSPF, BGP, RIP, IS-IS, and an experimental AOSPF protocol.
 
 ## 📋 Table of Contents
@@ -164,18 +161,10 @@ python main.py
 
 This project was developed by **Team Synex** with contributions from:
 
-- **Dulith Kavinda** (Repository Owner)
+- **Dulith Kavinda**
 - **Achintha**
 - **Ravindu**
 - **Thejake**
-
-### How to Contribute
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m 'Add YourFeature'`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Open a Pull Request
 
 ## 📜 License
 
